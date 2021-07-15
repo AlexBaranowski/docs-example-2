@@ -11,10 +11,19 @@ Open sourcing documentation allows us to:
 
 - Streamline changes in documentation in easy to understand manner
 - Everyone can create requests for particular topic via [Issue Creation on
-  GitHub FIXME]()
+  GitHub FIXME](https://github.com/AlexBaranowski/docs-example-2/issues/new/choose)
 - Build community and engage it in process
 
-## Contriubution guide
+## How documentation is organized?
+
+Documentation is organized in the following manner:
+
+- JumpStarts - Installation guides with extras
+- HowTo - How To guides on various topics
+- Errats - EuroLinux erratas in the form of the web pages
+- Release Notes 
+ 
+## Contributors guide
 
 We are using `mkdocs` with `mkdocs-material` to build and style our
 documentation.
@@ -75,7 +84,7 @@ It will build documentation and save it into `site` directory
     is not gitignored
 
 
-### Markdown cheetsheet for this project
-We created simple cheetsheet for MkDocs markdown syntax with extensions enabled
-in this procjets. It can be found [Here](HowTo/documentation-markdown.md)
-
+### Markdown cheat sheet for this project
+We created simple cheat sheet for MkDocs markdown syntax with extensions
+enabled in this project. It can be found
+[Here](HowTo/documentation-markdown.md)
