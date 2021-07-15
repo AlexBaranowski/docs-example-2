@@ -22,46 +22,60 @@ documentation.
 - [MkDocs site](https://mkdocs.readthedocs.io/en/stable/)
 - [Material for MkDocs site](https://squidfunk.github.io/mkdocs-material/)
 
+
 ### Setup environment locally
 
-Firstly it's good idea to create virtualenv, so you don't bloat your system
-python environment:
+Because MkDocs is Python based to run this documentation locally you need at
+least:
+
+- python3 (3.6+)
+- pip
+- virutalenv
+
+Installed on your system.
+
+
+Firstly lets create virtualenv, so you don't bloat your system python
+libraries and environment:
 ```
 virtualenv -p /usr/bin/python3 venv
 ```
+
 Then activate virtualenv
 
 Bash:
 ```bash
 . venv/bin/activate
 ```
+
 Fish:
 ```fish
 . venv/bin/activate.fish
 ```
 
-Now you are ready to install mkdocs and python packages:
+Now you are ready to install mkdocs and other Python packages:
 ```
 pip install -r requirements.txt
 ```
 
-## How to run or build
-
-Run:
+After it serving documentation on your host is as easy as running:
 ```
 mkdocs serve
 ```
 
-Build:
+To build documentation invoke:
 ```
 mkdocs build
 ```
 
-### mkdocs-material
+It will build documentation and save it into `site` directory
 
-In theory this is just template, but it's template that really work
+!!! warning "Please don't include site directory in pull requests"
+    Because we deploy this documentation with GitHub Pages the `site` directory
+    is not gitignored
 
 
 ### Markdown cheetsheet for this project
-[Here](HowTo/documentation-markdown.md)
+We created simple cheetsheet for MkDocs markdown syntax with extensions enabled
+in this procjets. It can be found [Here](HowTo/documentation-markdown.md)
 
