@@ -7,6 +7,8 @@ repo_url: https://github.com/AlexBaranowski/docs-example-2
 # EuroLinux theme settings
 theme:
   name: material
+  logo: assets/favicon-white.png
+  favicon: assets/favicon.png
   palette:
     primary: indigo
   font:
